@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MKJCollectionViewCell" id="gTV-IL-0wX" customClass="MKJCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="whU-DQ-APe"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tr-fc-5JK">
+                        <color key="backgroundColor" white="0.0" alpha="0.70799443493150682" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="whU-DQ-APe" secondAttribute="trailing" id="2HS-U2-d0T"/>
+                <constraint firstAttribute="bottom" secondItem="9Tr-fc-5JK" secondAttribute="bottom" constant="20" id="4OD-j0-eRB"/>
+                <constraint firstAttribute="bottom" secondItem="whU-DQ-APe" secondAttribute="bottom" id="9lq-Vt-pb6"/>
+                <constraint firstItem="9Tr-fc-5JK" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="N7o-YC-NHI"/>
+                <constraint firstItem="whU-DQ-APe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Pcn-R9-TI7"/>
+                <constraint firstItem="whU-DQ-APe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="R8r-86-XFw"/>
+            </constraints>
+            <connections>
+                <outlet property="backImageView" destination="whU-DQ-APe" id="L9z-0H-qbm"/>
+                <outlet property="priceLabel" destination="9Tr-fc-5JK" id="pRD-Y3-Uy8"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
